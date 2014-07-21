@@ -72,9 +72,8 @@ html {
   -ms-text-size-adjust: 100%;
 }
 body {
-  min-height: 100%;
-  font-size: 100%;
-  font-family: sans-serif;
+	min-height: 100%;
+	font-size: 100%;
 }
 sub,
 sup {
@@ -288,18 +287,14 @@ To create the three arrow lines within the icon
   outline: none;
   position: relative;
   float: right;
+  margin-right: 5px;
 }
 #search-bar {
-  position: fixed;
-  top: 17px;
-  right: 10px;
-  width: 16.875em;
-  z-index: 100;
+  padding-top: 3px;
 }
 .typeahead,
-.twitter-typeahead,
-.tt-input {
-  width: 12.5em;
+.twitter-typeahead {
+  width: calc(100% - 80px);
 }
 .tt-dropdown-menu {
   -moz-box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.3);
@@ -312,6 +307,10 @@ To create the three arrow lines within the icon
 }
 .tt-hint {
   color: rgba(0, 0, 0, 0.45);
+  width: 100%;
+}
+.tt-input {
+  width: 100%;
 }
 .tt-suggestion {
   font-size: 0.875em;
@@ -405,11 +404,12 @@ To create the three arrow lines within the icon
 }
 #web-help-c2 a:hover {
   text-decoration: none;
-  color: #5C5CD6;
+  color: #;
 }
+
 #web-help-c2 a:active {
-  text-decoration: underline;
-  color: #FF4D4D;
+  text-decoration:;
+  color: #5C5CD6;
 }
 #web-help {
   height: 100%;
@@ -449,8 +449,10 @@ To create the three arrow lines within the icon
   font-family: sans-serif;
 }
 #web-help-c2 .shortdesc {
-  font-size: 0.875em;
+  margin-bottom:10px;
+  font-size: 10px;
   font-style: italic;
+  font-family: "Open Sans Light";
 }
 #drag-container {
   position: fixed;
@@ -470,26 +472,23 @@ To create the three arrow lines within the icon
   pointer-events: none;
   opacity: 0.3;
 }
-#result-set li {
-  list-style-type: none;
-}
 .result-count {
   border-bottom: 10px double #333;
 }
 .result-title {
   line-height: 1em;
   margin-top: 0.625em;
-  margin-bottom: 0.4375em;
+  margin-bottom: 0.1875em;
 }
 .result-tree {
-  font-size: 0.6875em;
+  font-size: 0.75em;
   color: #000;
   line-height: 1.25em;
   border-bottom: 1px solid #333;
   padding-bottom: 0.625em;
 }
 .result-element:hover {
-  color: #5C5CD6;
+  color: #fff;
   cursor: pointer;
 }
 /***** end common styles *****/
@@ -508,15 +507,6 @@ To create the three arrow lines within the icon
     float: none;
     margin: auto;
     position: relative;
-  }
-  #search-bar {
-    top: 5.1875em;
-    width: 12.5em;
-  }
-  .typeahead,
-  .twitter-typeahead,
-  .tt-input {
-    width: 8.125em;
   }
   #web-help-c1 {
     width: 90%;
@@ -596,15 +586,6 @@ To create the three arrow lines within the icon
     position: relative;
     float: left;
   }
-  #search-bar {
-    top: 1.1875em;
-    width: 12.5em;
-  }
-  .typeahead,
-  .twitter-typeahead,
-  .tt-input {
-    width: 8.125em;
-  }
   #web-help {
     float: left;
   }
@@ -648,15 +629,6 @@ To create the three arrow lines within the icon
 	912-infinity px
 */
 @media screen and (min-width: 57em) {
-  #search-bar {
-    top: 1.1875em;
-    width: 16.875em;
-  }
-  .typeahead,
-  .twitter-typeahead,
-  .tt-input {
-    width: 12.5em;
-  }
   #web-help-c1 {
     max-width: 19.375em;
   }
